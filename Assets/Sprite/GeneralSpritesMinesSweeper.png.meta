@@ -1,0 +1,1025 @@
+fileFormatVersion: 2
+guid: f16866a55fbec04468d96f7d2e3af0f4
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 16
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: GeneralSpritesMinesSweeper_0
+      rect:
+        serializedVersion: 2
+        x: 14
+        y: 511
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9f96b9333e5696e4992db87bdbe1ce93
+      internalID: -1530915946
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GeneralSpritesMinesSweeper_1
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 511
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6a8ca1948a45cfd41bda1b36fc99f89c
+      internalID: 213142780
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GeneralSpritesMinesSweeper_2
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 511
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e9373a9cc344b494687f3f3844d9aa1c
+      internalID: 766307488
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GeneralSpritesMinesSweeper_3
+      rect:
+        serializedVersion: 2
+        x: 89
+        y: 511
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b625d0aad006bf4093cba1beeb50918
+      internalID: 87602540
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GeneralSpritesMinesSweeper_4
+      rect:
+        serializedVersion: 2
+        x: 114
+        y: 511
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: afbcf381b2c7e2b45bf339b396f5e8bb
+      internalID: -629039271
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GeneralSpritesMinesSweeper_5
+      rect:
+        serializedVersion: 2
+        x: 14
+        y: 536
+        width: 13
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a7432c688129ed489b8523b489a3849
+      internalID: -382177196
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GeneralSpritesMinesSweeper_6
+      rect:
+        serializedVersion: 2
+        x: 28
+        y: 536
+        width: 13
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 40062e82676a60546acd1cb74c980391
+      internalID: 812658952
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GeneralSpritesMinesSweeper_7
+      rect:
+        serializedVersion: 2
+        x: 42
+        y: 536
+        width: 13
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c805efaa02f508c418496f3456305f94
+      internalID: -1377362228
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GeneralSpritesMinesSweeper_8
+      rect:
+        serializedVersion: 2
+        x: 56
+        y: 536
+        width: 13
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d6f4c8c859712c444a13503778c547f6
+      internalID: 1729716271
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GeneralSpritesMinesSweeper_9
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 536
+        width: 13
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 73355d3c2de82a4408065c8e7fb5d50a
+      internalID: 348600182
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GeneralSpritesMinesSweeper_10
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 536
+        width: 13
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b59b7e4fd270a34ca5705ed8f04f6e1
+      internalID: -469094042
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GeneralSpritesMinesSweeper_11
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 536
+        width: 13
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 299bf22099653c14fb49eefcbed7ccd8
+      internalID: 196383651
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GeneralSpritesMinesSweeper_12
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 536
+        width: 13
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca17da93d74a5c84ab537325c6639a77
+      internalID: 523725927
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GeneralSpritesMinesSweeper_13
+      rect:
+        serializedVersion: 2
+        x: 126
+        y: 536
+        width: 13
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: df730a4196b464e408f3b0ebb52d8468
+      internalID: 1879301995
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GeneralSpritesMinesSweeper_14
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 536
+        width: 13
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba3df975bbaf753409432a2ec37f910a
+      internalID: 943018296
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GeneralSpritesMinesSweeper_15
+      rect:
+        serializedVersion: 2
+        x: 154
+        y: 536
+        width: 13
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe4e008f0e55b454bbb1d980d786cf5a
+      internalID: -1125111855
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GeneralSpritesMinesSweeper_16
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 536
+        width: 13
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9e968a94f52c8a948a3c7d3027b76298
+      internalID: -729284016
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GeneralSpritesMinesSweeper_17
+      rect:
+        serializedVersion: 2
+        x: 14
+        y: 494
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 57c3fc314e042974d932debe44d8b648
+      internalID: 145410392
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GeneralSpritesMinesSweeper_18
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 494
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 957d1deb6e40d464a9c6c8ca7e7476bc
+      internalID: 762410910
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GeneralSpritesMinesSweeper_19
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 494
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 13592502298f34d458862c627db3ba52
+      internalID: -172330311
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GeneralSpritesMinesSweeper_20
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 494
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 258b34824feff064da56c32fbf9c6e5f
+      internalID: 2093850004
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GeneralSpritesMinesSweeper_21
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 494
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d37f1fe93a54ecb45a59589ca460473b
+      internalID: 1853587617
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GeneralSpritesMinesSweeper_22
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 494
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1dbdb4523ef249a479f2d4e63570b501
+      internalID: 2128737902
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GeneralSpritesMinesSweeper_23
+      rect:
+        serializedVersion: 2
+        x: 116
+        y: 494
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8482a4468d7f6a140b8dffd024d7186d
+      internalID: -449016766
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GeneralSpritesMinesSweeper_24
+      rect:
+        serializedVersion: 2
+        x: 133
+        y: 494
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 99bf195f853d6a246acd6ae4d268783f
+      internalID: 1032715390
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GeneralSpritesMinesSweeper_25
+      rect:
+        serializedVersion: 2
+        x: 14
+        y: 477
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e82710d6bd9780429c8983c465fc5b5
+      internalID: 103282125
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GeneralSpritesMinesSweeper_26
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 477
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae6f6c7848f3936479a33a2ce9c5912e
+      internalID: -924489349
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GeneralSpritesMinesSweeper_27
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 477
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 52e934c3dfbef9946b10915cb30a3459
+      internalID: 1324289961
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GeneralSpritesMinesSweeper_28
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 477
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 440c10a55f48114489200ff08217eaf2
+      internalID: 2130915129
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GeneralSpritesMinesSweeper_29
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 477
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6781268c2f3be4944b2d23ab83896a63
+      internalID: 1353063216
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GeneralSpritesMinesSweeper_30
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 477
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2fd0c4678f81b9f42b29ce18f5f02380
+      internalID: 288689159
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GeneralSpritesMinesSweeper_31
+      rect:
+        serializedVersion: 2
+        x: 116
+        y: 477
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d5f2eafa478002c4391b01441022f5c2
+      internalID: -409731917
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GeneralSpritesMinesSweeper_32
+      rect:
+        serializedVersion: 2
+        x: 133
+        y: 477
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 93c6d7a5ac96cbc4a8b247bcf33fa9f7
+      internalID: -636558486
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GeneralSpritesMinesSweeper_33
+      rect:
+        serializedVersion: 2
+        x: 475
+        y: 318
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: da0d25da395041a4ea1ce6006cdf6427
+      internalID: -40272822
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GeneralSpritesMinesSweeper_34
+      rect:
+        serializedVersion: 2
+        x: 475
+        y: 307
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 11f78bc5326cf7c4382fe8a2864d2a0a
+      internalID: 725063497
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GeneralSpritesMinesSweeper_35
+      rect:
+        serializedVersion: 2
+        x: 486
+        y: 318
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d02e87508770e274cac3bbf782c25278
+      internalID: -1938821675
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GeneralSpritesMinesSweeper_36
+      rect:
+        serializedVersion: 2
+        x: 491
+        y: 289
+        width: 41
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 549aa83e5b730974b87df335b119a8cb
+      internalID: -632761992
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GeneralSpritesMinesSweeper_37
+      rect:
+        serializedVersion: 2
+        x: 602
+        y: 288
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 54aac43991326ac40a09971385be64ed
+      internalID: 1411625440
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GeneralSpritesMinesSweeper_38
+      rect:
+        serializedVersion: 2
+        x: 475
+        y: 274
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c19a6b8b7988a7c4895a92e1b1041d97
+      internalID: 1277176544
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GeneralSpritesMinesSweeper_39
+      rect:
+        serializedVersion: 2
+        x: 486
+        y: 274
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 59a6ae309ac34f44593f4335b5c09be2
+      internalID: -1651434830
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GeneralSpritesMinesSweeper_40
+      rect:
+        serializedVersion: 2
+        x: 475
+        y: 263
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a6d9a093b5371724c82d365df7dd83d8
+      internalID: 20228138
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      GeneralSpritesMinesSweeper_31: -409731917
+      GeneralSpritesMinesSweeper_0: -1530915946
+      GeneralSpritesMinesSweeper_2: 766307488
+      GeneralSpritesMinesSweeper_1: 213142780
+      GeneralSpritesMinesSweeper_7: -1377362228
+      GeneralSpritesMinesSweeper_21: 1853587617
+      GeneralSpritesMinesSweeper_30: 288689159
+      GeneralSpritesMinesSweeper_3: 87602540
+      GeneralSpritesMinesSweeper_18: 762410910
+      GeneralSpritesMinesSweeper_32: -636558486
+      GeneralSpritesMinesSweeper_35: -1938821675
+      GeneralSpritesMinesSweeper_5: -382177196
+      GeneralSpritesMinesSweeper_6: 812658952
+      GeneralSpritesMinesSweeper_27: 1324289961
+      GeneralSpritesMinesSweeper_15: -1125111855
+      GeneralSpritesMinesSweeper_39: -1651434830
+      GeneralSpritesMinesSweeper_33: -40272822
+      GeneralSpritesMinesSweeper_8: 1729716271
+      GeneralSpritesMinesSweeper_36: -632761992
+      GeneralSpritesMinesSweeper_23: -449016766
+      GeneralSpritesMinesSweeper_34: 725063497
+      GeneralSpritesMinesSweeper_14: 943018296
+      GeneralSpritesMinesSweeper_11: 196383651
+      GeneralSpritesMinesSweeper_29: 1353063216
+      GeneralSpritesMinesSweeper_22: 2128737902
+      GeneralSpritesMinesSweeper_37: 1411625440
+      GeneralSpritesMinesSweeper_4: -629039271
+      GeneralSpritesMinesSweeper_13: 1879301995
+      GeneralSpritesMinesSweeper_40: 20228138
+      GeneralSpritesMinesSweeper_19: -172330311
+      GeneralSpritesMinesSweeper_24: 1032715390
+      GeneralSpritesMinesSweeper_26: -924489349
+      GeneralSpritesMinesSweeper_12: 523725927
+      GeneralSpritesMinesSweeper_9: 348600182
+      GeneralSpritesMinesSweeper_38: 1277176544
+      GeneralSpritesMinesSweeper_16: -729284016
+      GeneralSpritesMinesSweeper_20: 2093850004
+      GeneralSpritesMinesSweeper_25: 103282125
+      GeneralSpritesMinesSweeper_28: 2130915129
+      GeneralSpritesMinesSweeper_10: -469094042
+      GeneralSpritesMinesSweeper_17: 145410392
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

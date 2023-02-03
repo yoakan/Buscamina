@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 32
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ae49208ae5aad484fb03ec12b559597f, type: 3}
+  m_Name: MineManager
+  m_EditorClassIdentifier: 
+  numbers:
+  - {fileID: 762410910, guid: f16866a55fbec04468d96f7d2e3af0f4, type: 3}
+  - {fileID: 103282125, guid: f16866a55fbec04468d96f7d2e3af0f4, type: 3}
+  - {fileID: -924489349, guid: f16866a55fbec04468d96f7d2e3af0f4, type: 3}
+  - {fileID: 1324289961, guid: f16866a55fbec04468d96f7d2e3af0f4, type: 3}
+  - {fileID: 2130915129, guid: f16866a55fbec04468d96f7d2e3af0f4, type: 3}
+  - {fileID: 1353063216, guid: f16866a55fbec04468d96f7d2e3af0f4, type: 3}
+  - {fileID: 288689159, guid: f16866a55fbec04468d96f7d2e3af0f4, type: 3}
+  - {fileID: -409731917, guid: f16866a55fbec04468d96f7d2e3af0f4, type: 3}
+  - {fileID: -636558486, guid: f16866a55fbec04468d96f7d2e3af0f4, type: 3}
+  blockEstate:
+  - {fileID: 145410392, guid: f16866a55fbec04468d96f7d2e3af0f4, type: 3}
+  - {fileID: -172330311, guid: f16866a55fbec04468d96f7d2e3af0f4, type: 3}
+  - {fileID: 2093850004, guid: f16866a55fbec04468d96f7d2e3af0f4, type: 3}
