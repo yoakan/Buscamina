@@ -26,6 +26,7 @@ public class Mine : MonoBehaviour
     internal TypeMine TypeMine { get => typeMine; set => typeMine = value; }
     public int PosX { get => posX; set => posX = value; }
     public int PosY { get => posY; set => posY = value; }
+    public BlockType BlockType { get => blockType;  }
 
     private void Start()
     {
@@ -80,10 +81,10 @@ public class Mine : MonoBehaviour
         switch (indexBlock)
         {
             case (int)BlockType.flag:
-                GameManager.Instance.potFlag(1,this);
+                GameManager.Instance.potFlag(1,this);blockType = BlockType.flag;
                 break;
             case (int)BlockType.question:
-                GameManager.Instance.potFlag(-1,this);
+                GameManager.Instance.potFlag(-1,this); blockType = BlockType.none;
                 break;
         }
     }

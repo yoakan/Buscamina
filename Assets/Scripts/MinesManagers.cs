@@ -153,11 +153,53 @@ public class MinesManagers : MonoBehaviour
     {
         if (flag > 0)
         {
-            mines.Add(mine);
+            if (!mines.Contains(mine))
+            {
+                mines.Add(mine);
+            }
+           
         }
         else
         {
-            mines.Remove(mine);
+            if (mine.TypeMine != TypeMine.explosive)
+            {
+                mines.Remove(mine);
+            }
+            
         }
+    }
+    public void restartTablet()
+    {
+        for (int x = 0; x < casillas.GetLength(0); x++)
+        {
+            for (int y = 0; y < casillas.GetLength(1); y++)
+            {
+
+
+                Destroy(casillas[x, y].gameObject);
+                 
+            }
+        }
+        generateTablet();
+    }
+
+    public bool allMinesWitchFlag()
+    {
+        print("Minas "+mines.Count+" , "+numMinas);
+        if (mines.Count == numMinas)
+        {
+            print("MISMO NUMERO MINAS");
+            foreach (Mine mine in mines)
+            {
+                if (mine.BlockType != BlockType.flag)
+                    return false;
+            }
+        }
+        else
+        {
+            return false;
+        }
+        
+        return true;
     }
 }

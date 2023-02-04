@@ -11,15 +11,19 @@ public class MineController : MonoBehaviour
     {
        
         PointerEventData ped = (PointerEventData)eventData;
-        if (ped.button == PointerEventData.InputButton.Left)
+        if (!GameManager.Instance.GameOver)
         {
-            
-            mine.showResult();
+            if (ped.button == PointerEventData.InputButton.Left)
+            {
+
+                mine.showResult();
+            }
+            else if (ped.button == PointerEventData.InputButton.Right)
+            {
+                mine.blockMine();
+            }
         }
-        else if(ped.button== PointerEventData.InputButton.Right)
-        {
-            mine.blockMine();
-        }
+        
         //print("TYPE CLICK: "+ ped.button);
     }
 

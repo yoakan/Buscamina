@@ -28,6 +28,12 @@ public class InfoUI : MonoBehaviour
         }
     }
 
+    public void resetClick()
+    {
+        setStateEmoji(EmojiState.pressed);
+        GameManager.Instance.MinesManagers.restartTablet();
+        GameManager.Instance.resetGame();
+    }
     private void setImageLayaout(Image[] numberSprite,int value)
     {
         string numberInString = reverseString(value);
@@ -35,7 +41,10 @@ public class InfoUI : MonoBehaviour
         {
             for (int i = 0; i < numberInString.Length; i++)
             {
-                numberSprite[i].sprite = SpriteUIManager.Instance.Numbers[int.Parse(numberInString[i]+"")];
+                string chart = numberInString[i] + "";
+
+
+                numberSprite[i].sprite = (chart!="-")?SpriteUIManager.Instance.Numbers[int.Parse(chart)]: SpriteUIManager.Instance.Numbers[10];
             }
         }
         
@@ -43,6 +52,10 @@ public class InfoUI : MonoBehaviour
     private string reverseString(int value)
     {
         string valueString =value+"";
+        for (int i = 0; i < numberMines.Length; i++)
+        {
+            valueString = "0"+value;
+        }
         string valueReverse="";
         for (int i = valueString.Length - 1; i >= 0; i--)
         {
@@ -76,6 +89,7 @@ public class InfoUI : MonoBehaviour
                 break;
             default:
                 this.emoji.sprite = SpriteUIManager.Instance.EmojiEstate[(int)emoji];
+                timePass = -1;
                 break;
         }
     }

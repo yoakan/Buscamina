@@ -8,6 +8,7 @@ public class GameManager : MonoBehaviour
 
     private MinesManagers minesManagers;
     private InfoUI infoUI;
+    private bool gameOver = false;
 
     [SerializeField]
     private int cantMines;
@@ -32,6 +33,7 @@ public class GameManager : MonoBehaviour
     public MinesManagers MinesManagers { get => minesManagers; set => minesManagers = value; }
     public InfoUI InfoUI { get => infoUI; set => infoUI = value; }
     public int CantMines { get => cantMines; set => cantMines = value; }
+    public bool GameOver { get => gameOver;  }
 
     private void Awake()
     {
@@ -61,6 +63,8 @@ public class GameManager : MonoBehaviour
         if (!firstClick)
         {
             firstClick = true;
+            print("FIRST TOKEEEE");
+            gameOver = false;
             minesManagers.generateAtributesMines(posClickX, postClickY);
             InfoUI.startTime();
         }
@@ -69,20 +73,35 @@ public class GameManager : MonoBehaviour
     {
         minesManagers.modifyArrayMines(mine, value);
         flagPush += value;
+        
         infoUI.setInfoMines(cantMines-flagPush);
+        StartCoroutine(checkWin());
     }
-
+    IEnumerator checkWin()
+    {
+        yield return null;
+        if (minesManagers.allMinesWitchFlag())
+        {
+            InfoUI.setStateEmoji(EmojiState.winner);
+        }
+    }
     public void checkIfLose(TypeMine mineType)
     {
         if(mineType == TypeMine.explosive)
         {
             InfoUI.setStateEmoji(EmojiState.losser);
             minesManagers.showAllMines();
+
         }
         else
         {
             
             InfoUI.setStateEmoji(EmojiState.surprise);
         }
+    }
+    public void resetGame()
+    {
+        firstClick = false;
+        gameOver = false;
     }
 }
