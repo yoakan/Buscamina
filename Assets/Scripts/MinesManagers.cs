@@ -10,20 +10,26 @@ public class MinesManagers : MonoBehaviour
     // Start is called before the first frame update
     public GameObject tablero,layaoutPrefabs,minasPrefabs;
 
-    public int canMinasEnX=8,canMinasEnY=8;
-    public int numMinas =5;
+    public int canMinasEnX=9,canMinasEnY=9;
+    private  int numMinas =10;
     private Mine[,] casillas;
+    private List<Mine> mines= new List<Mine>();
+
 
     void Start()
     {
-        casillas = new Mine[canMinasEnX, canMinasEnY];
-        tablero.GetComponent<GridLayoutGroup>().constraintCount = canMinasEnX;
-        generarTablero();
-        generarMinas();
-        generarNumeros();
+        GameManager.Instance.MinesManagers = this;
+        numMinas = GameManager.Instance.CantMines;
+        generateTablet();
+        
     }
 
-    private void generarNumeros()
+    public void generateAtributesMines(int x,int y)
+    {
+        generateMines(x,y);
+        generateNumbers();
+    }
+    private void generateNumbers()
     {
         for (int x = 0; x < casillas.GetLength(0); x++)
         {
@@ -57,11 +63,12 @@ public class MinesManagers : MonoBehaviour
             }
             
         }
-        print("CANTIDAD DE MINAS: " + minas);
+        //print("CANTIDAD DE MINAS: " + minas);
         return minas;
     }
-    private void generarMinas()
+    private void generateMines(int clickX,int clickY)
     {
+        mines.Clear();
         System.Random random = new System.Random();
         int posX;
         int posY;
@@ -69,9 +76,11 @@ public class MinesManagers : MonoBehaviour
         {
             posX = random.Next(0,canMinasEnX);
             posY = random.Next(0, canMinasEnY);
-            if (casillas[posX, posY].TypeMine==TypeMine.none)
+
+            if (casillas[posX, posY].TypeMine==TypeMine.none && clickX != posX && posY != clickY)
             {
                 casillas[posX, posY].TypeMine = TypeMine.explosive;
+                mines.Add(casillas[posX, posY]);
             }
             else
             {
@@ -80,10 +89,12 @@ public class MinesManagers : MonoBehaviour
         }
     }
 
-    private void generarTablero()
+    public  void generateTablet()
     {
+        casillas = new Mine[canMinasEnX, canMinasEnY];
+        tablero.GetComponent<GridLayoutGroup>().constraintCount = canMinasEnX;
 
-        for(int x = 0; x < casillas.GetLength(0); x++)
+        for (int x = 0; x < casillas.GetLength(0); x++)
         {
             for(int y =0; y < casillas.GetLength(1); y++)
             {
@@ -128,5 +139,25 @@ public class MinesManagers : MonoBehaviour
 
         }
 
+    }
+
+    public void showAllMines()
+    {
+        foreach(Mine mine in mines)
+        {
+            mine.showStateFinal();
+        }
+        
+    }
+    public void modifyArrayMines(Mine mine, int flag)
+    {
+        if (flag > 0)
+        {
+            mines.Add(mine);
+        }
+        else
+        {
+            mines.Remove(mine);
+        }
     }
 }

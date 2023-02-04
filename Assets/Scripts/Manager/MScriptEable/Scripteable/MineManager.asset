@@ -26,3 +26,7 @@ MonoBehaviour:
   - {fileID: 145410392, guid: f16866a55fbec04468d96f7d2e3af0f4, type: 3}
   - {fileID: -172330311, guid: f16866a55fbec04468d96f7d2e3af0f4, type: 3}
   - {fileID: 2093850004, guid: f16866a55fbec04468d96f7d2e3af0f4, type: 3}
+  mines:
+  - {fileID: -449016766, guid: f16866a55fbec04468d96f7d2e3af0f4, type: 3}
+  - {fileID: 2128737902, guid: f16866a55fbec04468d96f7d2e3af0f4, type: 3}
+  - {fileID: 1032715390, guid: f16866a55fbec04468d96f7d2e3af0f4, type: 3}

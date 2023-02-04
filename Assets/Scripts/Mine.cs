@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -8,12 +9,13 @@ public class Mine : MonoBehaviour
 {
     private SpriteRenderer _spriteRenderer;
     private TypeMine typeMine = TypeMine.none;
-    private BlockType blockype = BlockType.none;
+    private BlockType blockType = BlockType.none;
 
     private bool showed = false;
 
     private int numero = -1;
     private int indexBlock = 0;
+
     private int posX=-1;
 
     private int posY=-1;
@@ -33,14 +35,25 @@ public class Mine : MonoBehaviour
     
     public void showResult()
     {
+        GameManager.Instance.isStartGame(posX,posY);
         if (indexBlock==0)
         {
             showed = true;
-            _spriteRenderer.sprite = SpriteMineManager.Instance.Numbers[numero];
-            if (numero == 0)
+            if(typeMine != TypeMine.explosive)
             {
-                manager.clickMines(posX, posY);
+                _spriteRenderer.sprite = SpriteMineManager.Instance.Numbers[numero];
+
+                if (numero == 0)
+                {
+                    manager.clickMines(posX, posY);
+                }
+                
             }
+            else
+            {
+                _spriteRenderer.sprite = SpriteMineManager.Instance.MinesState[0];
+            }
+            GameManager.Instance.checkIfLose(typeMine);
         }
         
     }
@@ -55,8 +68,24 @@ public class Mine : MonoBehaviour
                 indexBlock = 0;
             }
             _spriteRenderer.sprite = blockMine[indexBlock];
+            updateInGame();
+            
+
         }
         
+    }
+
+    private void updateInGame()
+    {
+        switch (indexBlock)
+        {
+            case (int)BlockType.flag:
+                GameManager.Instance.potFlag(1,this);
+                break;
+            case (int)BlockType.question:
+                GameManager.Instance.potFlag(-1,this);
+                break;
+        }
     }
 
     private void Update()
@@ -72,18 +101,34 @@ public class Mine : MonoBehaviour
         if(numero!=-1 /*&&  numero !=0*/ && showed)
             text.GetComponent<Text>().text = "" + numero;
     }
+    public void showStateFinal()
+    {
+        if(typeMine == TypeMine.explosive)
+        {
+            if (!showed && indexBlock != (int)BlockType.flag)
+            {
+                _spriteRenderer.sprite = SpriteMineManager.Instance.MinesState[1];
+                print("HOLA ME ESTOY MOSTRANDO!!");
+            }
+        }
+        else 
+        {
+            _spriteRenderer.sprite = SpriteMineManager.Instance.MinesState[2];
+        }
+    }
 }
-enum TypeMine
+public enum TypeMine
 {
     none,
     explosive,
     cube
 }
 
-enum BlockType
+public enum BlockType
 {
     none=0,
     flag=1,
     question=2,
 
 }
+

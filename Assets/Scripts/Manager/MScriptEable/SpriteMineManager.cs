@@ -11,6 +11,10 @@ public class SpriteMineManager : ScripteableObjectSingleton<SpriteMineManager>
     [SerializeField]
     private Sprite[] blockEstate;
 
+    [SerializeField]
+    private Sprite[] mines;
+
     public Sprite[] BlockEstate { get => Instance.blockEstate;  }
     public Sprite[] Numbers { get => Instance.numbers;  }
+    public Sprite[] MinesState { get => mines;  }
 }

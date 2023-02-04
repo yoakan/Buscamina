@@ -14,14 +14,13 @@ public class MineController : MonoBehaviour
         if (ped.button == PointerEventData.InputButton.Left)
         {
             
-            
             mine.showResult();
         }
         else if(ped.button== PointerEventData.InputButton.Right)
         {
             mine.blockMine();
         }
-        print("TYPE CLICK: "+ ped.button);
+        //print("TYPE CLICK: "+ ped.button);
     }
 
     private void Start()
