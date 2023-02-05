@@ -34,6 +34,11 @@ public class InfoUI : MonoBehaviour
         GameManager.Instance.TabletManager.restartTablet();
         GameManager.Instance.resetGame();
     }
+    /*
+     * Añade el numero en formato que pueda ser representado por la pantalla, al ser 3 imagenes hay que mostrarlo en el orden correspondiente.
+     * SEÑOR NUESTRO INDICADORES ESTAN FALLANDO.
+     * SEÓR: MIERDAAA LA PROXIMA VEZ NO LO COMPRO POR ALIEXPRESS
+     */
     private void setImageLayaout(Image[] numberSprite,int value)
     {
         string numberInString = reverseString(value);
@@ -49,6 +54,10 @@ public class InfoUI : MonoBehaviour
         }
         
     }
+
+    /*Da la vuelta a la cadena y añade sero si lo necesita las imagenes
+     * SEÑOR COMO RECOMENDACION LA PROXIMA VEZ TORNILLOS DE PAPEL QUE NO DURAN!!
+     */
     private string reverseString(int value)
     {
         string valueString =value+"";
@@ -77,6 +86,10 @@ public class InfoUI : MonoBehaviour
     {
         setImageLayaout(numberMines, mines);
     }
+    /*
+     Cambia el icono del emoji si es surprise y pressed los deja por unos segundos.
+    TIMY: Muchas gracias por la pastilla sonriente señor!! Seguro que me ayudara con la tost! 
+     */
     public void setStateEmoji(EmojiState emoji)
     {
         switch (emoji)
@@ -93,7 +106,10 @@ public class InfoUI : MonoBehaviour
                 break;
         }
     }
-
+    /*
+     * Espera unos segundo y vuelve al emoji por defecto
+     * TIMY: Joder que ha pasado, esa pastilla me ha sentado mal...
+     */
     private IEnumerator emojiTimeInSprite(EmojiState emoji)
     {
 

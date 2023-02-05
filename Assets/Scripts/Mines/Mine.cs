@@ -34,6 +34,10 @@ public class Mine : MonoBehaviour
         _spriteRenderer = GetComponent<Image>();
     }
     
+    /*
+     * Muestra el valor de la mina si tiene valor 0 llama al gameManager para que mire los de alrededor.  
+     * SEÑOR LOS SOLDADOS SE ESTAN DESNUDANDO, QUIEREN PROTESTAR POR LOS RECORTES EN LA COMIDA.
+     */
     public void showResult()
     {
         GameManager.Instance.isStartGame(posX,posY);
@@ -58,6 +62,10 @@ public class Mine : MonoBehaviour
         }
         
     }
+    /*
+     Añade un tipo de block si la mina no ha sido mostrada.
+    TIMI: Joder me han metido al calaboso, eso pasa por hechar cuenta al tonto de Mike
+     */
     public void blockMine()
     {
         if (!showed)
@@ -69,14 +77,17 @@ public class Mine : MonoBehaviour
                 indexBlock = 0;
             }
             _spriteRenderer.sprite = blockMine[indexBlock];
-            updateInGame();
+            updateBlock();
             
 
         }
         
     }
-
-    private void updateInGame()
+    /*
+     Actualiza el estado y añade o quita una bandera del gameManager
+    MI SEÑOR PORQUE HAS COMPRADO TANTAS BANDERAS DE TURQUIA?? ACASO VAMOS A IR AL TURCO?
+     */
+    private void updateBlock()
     {
         switch (indexBlock)
         {
@@ -98,6 +109,11 @@ public class Mine : MonoBehaviour
 
 
     }
+    /*
+     Muestra el estado de las minas. Si es un inpostor o no
+    Espias: por fin me puedo quitar estos zapatos estrechos y esta camisa rosa que asco joder.
+    TIMI: Joder todavía sigo en el calabozo...
+     */
     public void showStateFinal()
     {
         if(typeMine == TypeMine.explosive)

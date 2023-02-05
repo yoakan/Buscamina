@@ -63,6 +63,9 @@ public class GameManager : MonoBehaviour
             new GameObject("GameManager", typeof(GameManager));
         }
     }
+    /*Comprueba si ha empezado la guerra
+     * MI SEÑOR POR EL CAMINO HAY MINAS CUIDADO POR DONDE PISA
+     */
     public void isStartGame(int posClickX,int postClickY)
     {
         if (!firstClick)
@@ -74,6 +77,11 @@ public class GameManager : MonoBehaviour
             InfoUI.startTime();
         }
     }
+    /*
+     Añade una bandera.
+    TIMI: SEÑOR por que los demas se rien de mi?
+    SEÑOR: NO LO VES QUE TE HAN PUESTO LA BANDERA TURCA INVECIL???
+     */
     public void potFlag(int value,Mine mine)
     {
         minesManagers.modifyArrayMines(mine, value);
@@ -82,21 +90,30 @@ public class GameManager : MonoBehaviour
         infoUI.setInfoMines(cantMines-flagPush);
         StartCoroutine(checkWin());
     }
+    /*
+     Comprube si no queda mina sin bandera.
+    SEÑOR:  HEMOS GANADO!!! Subirle el sueldo a esos niños con anginas.
+     */
     IEnumerator checkWin()
     {
         yield return null;
         if (minesManagers.allMinesWitchFlag())
         {
             InfoUI.setStateEmoji(EmojiState.winner);
+            gameOver = true;
         }
     }
+    /*
+     * Comprueba si la mina es un explisivo si es hací pierde sino muestra el emoji de sorpresa
+     * Espias: Sabia que ese Señor caera en la TARTA JAJAAJHAHHAHAHAHAH
+     */
     public void checkIfLose(TypeMine mineType)
     {
         if(mineType == TypeMine.explosive)
         {
             InfoUI.setStateEmoji(EmojiState.losser);
             minesManagers.showAllMines();
-
+            gameOver = true;
         }
         else
         {

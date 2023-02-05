@@ -22,6 +22,10 @@ public class TabletManager : MonoBehaviour
         generateTablet();
 
     }
+    /*
+     * Genera un tablero y le pasa las minas al Mines manager
+     * SEÑOR: A SUS PUESTO!!!!
+     */
     public Mine[,] generateTablet()
     {
         casillas = new Mine[tablet.SquareX, tablet.SquareX];
@@ -44,6 +48,12 @@ public class TabletManager : MonoBehaviour
         return casillas;
     }
 
+    /*
+     * Borra las casillas y genera un nuevo tablero
+     * SEÑOR: Quien os han enseñado a trabajar asi?? FUERA!!!!!!!!!!!!!!!!!
+     * SÉÑOR: Que traigan nuevos reclutas y porfavor que no venga de bellas artes.
+     */
+
     public void restartTablet()
     {
         for (int x = 0; x < casillas.GetLength(0); x++)
@@ -64,4 +74,12 @@ public class TabletManager : MonoBehaviour
         return tablet.NumMines;
     }
 
+    /*
+        Establece un nuevo tablero y resetea el antiguo     
+     */
+    public void changeTablet(Tablet tablet)
+    {
+        this.tablet = tablet;
+        restartTablet();
+    }
 }
