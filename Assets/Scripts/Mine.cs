@@ -7,7 +7,7 @@ using UnityEngine.UI;
 
 public class Mine : MonoBehaviour
 {
-    private SpriteRenderer _spriteRenderer;
+    private Image _spriteRenderer;
     private TypeMine typeMine = TypeMine.none;
     private BlockType blockType = BlockType.none;
 
@@ -31,7 +31,7 @@ public class Mine : MonoBehaviour
     private void Start()
     {
         manager = FindObjectOfType<MinesManagers>();
-        _spriteRenderer = GetComponent<SpriteRenderer>();
+        _spriteRenderer = GetComponent<Image>();
     }
     
     public void showResult()
@@ -93,14 +93,10 @@ public class Mine : MonoBehaviour
     {
         if(typeMine == TypeMine.explosive)
         {
-            GetComponent<SpriteRenderer>().color = Color.red;
+            GetComponent<Image>().color = Color.red;
         }
-        if (typeMine == TypeMine.cube)
-        {
-            GetComponent<SpriteRenderer>().color = Color.blue;
-        }
-        if(numero!=-1 /*&&  numero !=0*/ && showed)
-            text.GetComponent<Text>().text = "" + numero;
+
+
     }
     public void showStateFinal()
     {

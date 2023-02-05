@@ -102,7 +102,7 @@ public class MinesManagers : MonoBehaviour
                 Mine mine = mineObject.GetComponent<Mine>();
                 mine.transform.position = transform.position;
                 mine.transform.SetParent( tablero.transform);
-                mine.transform.localScale = Vector3.one * 40;
+                mine.transform.localScale = Vector3.one ;
                 casillas[x, y] = mine;
                 casillas[x, y].PosX = x; casillas[x, y].PosY = y;
             }
@@ -185,7 +185,7 @@ public class MinesManagers : MonoBehaviour
 
     public bool allMinesWitchFlag()
     {
-        print("Minas "+mines.Count+" , "+numMinas);
+        //print("Minas "+mines.Count+" , "+numMinas);
         if (mines.Count == numMinas)
         {
             print("MISMO NUMERO MINAS");
