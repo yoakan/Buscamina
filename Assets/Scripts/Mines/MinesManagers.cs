@@ -8,27 +8,17 @@ using UnityEngine.UI;
 public class MinesManagers : MonoBehaviour
 {
     // Start is called before the first frame update
-    public GameObject tablero,layaoutPrefabs,minasPrefabs;
 
-    public int canMinasEnX=9,canMinasEnY=9;
-    private Tablet tablet;
+
+
     private  int numMinas =10;
     private Mine[,] casillas;
     private List<Mine> mines= new List<Mine>();
 
     public Mine[,] Casillas {  set => casillas = value; }
 
-    private void Awake()
-    {
-        tablet = TabletDefautls.Begginer();
-        numMinas = tablet.NumMines;
-    }
-    void Start()
-    {
-        
-        generateTablet();
-        
-    }
+
+
 
     public void generateAtributesMines(int x,int y)
     {
@@ -76,12 +66,13 @@ public class MinesManagers : MonoBehaviour
     {
         mines.Clear();
         System.Random random = new System.Random();
+        numMinas = GameManager.Instance.TabletManager.getMines();
         int posX;
         int posY;
         for(int e = 0; e < numMinas; e++)
         {
-            posX = random.Next(0,tablet.SquareX);
-            posY = random.Next(0, tablet.SquareX);
+            posX = random.Next(0,casillas.GetLength(0));
+            posY = random.Next(0, casillas.GetLength(1));
 
             if (casillas[posX, posY].TypeMine==TypeMine.none && clickX != posX && posY != clickY)
             {
@@ -95,25 +86,7 @@ public class MinesManagers : MonoBehaviour
         }
     }
 
-    public  void generateTablet()
-    {
-        casillas = new Mine[tablet.SquareX, tablet.SquareX];
-        tablero.GetComponent<GridLayoutGroup>().constraintCount = tablet.SquareX;
 
-        for (int x = 0; x < casillas.GetLength(0); x++)
-        {
-            for(int y =0; y < casillas.GetLength(1); y++)
-            {
-                GameObject mineObject = Instantiate(minasPrefabs);
-                Mine mine = mineObject.GetComponent<Mine>();
-                mine.transform.position = transform.position;
-                mine.transform.SetParent( tablero.transform);
-                mine.transform.localScale = Vector3.one ;
-                casillas[x, y] = mine;
-                casillas[x, y].PosX = x; casillas[x, y].PosY = y;
-            }
-        }
-    }
 
 
     public void clickMines(int xCasilla, int yCasilla)
@@ -170,20 +143,7 @@ public class MinesManagers : MonoBehaviour
             
         }
     }
-    public void restartTablet()
-    {
-        for (int x = 0; x < casillas.GetLength(0); x++)
-        {
-            for (int y = 0; y < casillas.GetLength(1); y++)
-            {
 
-
-                Destroy(casillas[x, y].gameObject);
-                 
-            }
-        }
-        generateTablet();
-    }
 
     public bool allMinesWitchFlag()
     {
@@ -204,13 +164,6 @@ public class MinesManagers : MonoBehaviour
         
         return true;
     }
-    public int getMines()
-    {
-        return tablet.NumMines;
-    }
 
-    public void changeTablet()
-    {
 
-    }
 }

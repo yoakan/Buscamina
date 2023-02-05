@@ -9,7 +9,6 @@ public class TabletManager : MonoBehaviour
     private Tablet tablet;
     private int numMinas = 10;
     private Mine[,] casillas;
-    private List<Mine> mines = new List<Mine>();
 
     private void Awake()
     {
@@ -60,5 +59,9 @@ public class TabletManager : MonoBehaviour
         generateTablet();
     }
     // Start is called before the first frame update
+    public int getMines()
+    {
+        return tablet.NumMines;
+    }
 
 }

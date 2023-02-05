@@ -29,13 +29,14 @@ public class GameManager : MonoBehaviour
     }
     private void Start()
     {
-        cantMines = minesManagers.getMines();
+        cantMines = tabletManager.getMines();
         infoUI.setInfoMines(cantMines);
     }
     public MinesManagers MinesManagers { get => minesManagers; set => minesManagers = value; }
     public InfoUI InfoUI { get => infoUI; set => infoUI = value; }
 
     public bool GameOver { get => gameOver;  }
+    public TabletManager TabletManager { get => tabletManager; set => tabletManager = value; }
 
     private void Awake()
     {

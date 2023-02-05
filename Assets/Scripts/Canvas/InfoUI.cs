@@ -31,7 +31,7 @@ public class InfoUI : MonoBehaviour
     public void resetClick()
     {
         setStateEmoji(EmojiState.pressed);
-        GameManager.Instance.MinesManagers.restartTablet();
+        GameManager.Instance.TabletManager.restartTablet();
         GameManager.Instance.resetGame();
     }
     private void setImageLayaout(Image[] numberSprite,int value)
