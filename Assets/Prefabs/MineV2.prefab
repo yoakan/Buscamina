@@ -103,6 +103,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3e5b347cd5370bb4684d656c632505bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  SpriteMineManager: {fileID: 11400000, guid: 8549a4689f0c4a8488bfdcb10a24c1cc, type: 2}
   text: {fileID: 0}
 --- !u!114 &6640690488751864660
 MonoBehaviour:

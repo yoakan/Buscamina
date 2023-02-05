@@ -10,6 +10,7 @@ public class Mine : MonoBehaviour
     private Image _spriteRenderer;
     private TypeMine typeMine = TypeMine.none;
     private BlockType blockType = BlockType.none;
+    [SerializeField]private  SpriteMineManager SpriteMineManager;
 
     private bool showed = false;
 
@@ -46,7 +47,7 @@ public class Mine : MonoBehaviour
             showed = true;
             if(typeMine != TypeMine.explosive)
             {
-                _spriteRenderer.sprite = SpriteMineManager.Instance.Numbers[numero];
+                _spriteRenderer.sprite = SpriteMineManager.Numbers[numero];
 
                 if (numero == 0)
                 {
@@ -56,7 +57,7 @@ public class Mine : MonoBehaviour
             }
             else
             {
-                _spriteRenderer.sprite = SpriteMineManager.Instance.MinesState[0];
+                _spriteRenderer.sprite = SpriteMineManager.MinesState[0];
             }
             GameManager.Instance.checkIfLose(typeMine);
         }
@@ -71,7 +72,7 @@ public class Mine : MonoBehaviour
         if (!showed)
         {
             indexBlock++;
-            Sprite[] blockMine = SpriteMineManager.Instance.BlockEstate;
+            Sprite[] blockMine = SpriteMineManager.BlockEstate;
             if (indexBlock >= blockMine.Length)
             {
                 indexBlock = 0;
@@ -102,10 +103,11 @@ public class Mine : MonoBehaviour
 
     private void Update()
     {
+        /*
         if(typeMine == TypeMine.explosive)
         {
             GetComponent<Image>().color = Color.red;
-        }
+        }*/
 
 
     }
@@ -120,13 +122,13 @@ public class Mine : MonoBehaviour
         {
             if (!showed && indexBlock != (int)BlockType.flag)
             {
-                _spriteRenderer.sprite = SpriteMineManager.Instance.MinesState[1];
+                _spriteRenderer.sprite = SpriteMineManager.MinesState[1];
                 print("HOLA ME ESTOY MOSTRANDO!!");
             }
         }
         else 
         {
-            _spriteRenderer.sprite = SpriteMineManager.Instance.MinesState[2];
+            _spriteRenderer.sprite = SpriteMineManager.MinesState[2];
         }
     }
 }

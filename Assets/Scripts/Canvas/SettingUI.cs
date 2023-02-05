@@ -8,17 +8,13 @@ public class SettingUI : MonoBehaviour
     private GameObject gameSettings;
     private bool mouseInSetting = false;
     private int resolutionXDefault = 205, resolutionYDefault = 300;
-    private int constantPixelPerSquare = 7;
+    private int constantPixelPerSquare = 10;
 
     private void Awake()
     {
         Screen.SetResolution(resolutionXDefault, resolutionYDefault, false);
     }
     // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
 
     // Update is called once per frame
     void Update()

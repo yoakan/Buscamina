@@ -2,7 +2,7 @@
 %TAG !u! tag:unity3d.com,2011:
 --- !u!114 &11400000
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 32
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e26d5a3f5e48cdc4fb8bcb34f036d81b, type: 3}
-  m_Name: UIManager
+  m_Name: SpriteUIManager
   m_EditorClassIdentifier: 
   numbers:
   - {fileID: 943018296, guid: f16866a55fbec04468d96f7d2e3af0f4, type: 3}

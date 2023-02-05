@@ -20,9 +20,9 @@ public class TabletDefautls
     public static List<Tablet> tablets()
     {
         List<Tablet> tablets = new List<Tablet>();
-        tablets.Add(new Tablet(30, 16, 99));
-        tablets.Add(new Tablet(16, 16, 40));
-        tablets.Add(new Tablet(30, 16, 99));
+        tablets.Add(Begginer());
+        tablets.Add(Intermediate());
+        tablets.Add(Expert());
         return tablets;
     }
 }

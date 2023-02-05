@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 [CreateAssetMenu(menuName = "Singletons/MineManager")]
-public class SpriteMineManager : ScripteableObjectSingleton<SpriteMineManager>
+public class SpriteMineManager : ScriptableObject
 {
     [SerializeField]
     private Sprite[] numbers;
@@ -14,7 +14,9 @@ public class SpriteMineManager : ScripteableObjectSingleton<SpriteMineManager>
     [SerializeField]
     private Sprite[] mines;
 
-    public Sprite[] BlockEstate { get => Instance.blockEstate;  }
-    public Sprite[] Numbers { get => Instance.numbers;  }
+    public Sprite[] BlockEstate { get => blockEstate;  }
+    public Sprite[] Numbers { get => numbers;  }
     public Sprite[] MinesState { get => mines;  }
+
+
 }

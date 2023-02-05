@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 [CreateAssetMenu(menuName = "Singletons/SpriteUIManager")]
-public class SpriteUIManager : ScripteableObjectSingleton<SpriteUIManager>
+public class SpriteUIManager : ScriptableObject
 {
     [SerializeField]
     private Sprite[] numbers;

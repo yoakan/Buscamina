@@ -14,8 +14,10 @@ public class InfoUI : MonoBehaviour
     private float timePass = -1;
     [SerializeField]
     private float timeEmoji;
+    [SerializeField]
+    private SpriteUIManager SpriteUIManager;
     // Start is called before the first frame update
-    
+
 
 
     // Update is called once per frame
@@ -49,7 +51,7 @@ public class InfoUI : MonoBehaviour
                 string chart = numberInString[i] + "";
 
 
-                numberSprite[i].sprite = (chart!="-")?SpriteUIManager.Instance.Numbers[int.Parse(chart)]: SpriteUIManager.Instance.Numbers[10];
+                numberSprite[i].sprite = (chart!="-")?SpriteUIManager.Numbers[int.Parse(chart)]: SpriteUIManager.Numbers[10];
             }
         }
         
@@ -88,7 +90,7 @@ public class InfoUI : MonoBehaviour
     }
     /*
      Cambia el icono del emoji si es surprise y pressed los deja por unos segundos.
-    TIMY: Muchas gracias por la pastilla sonriente señor!! Seguro que me ayudara con la tost! 
+    TIMY: Muchas gracias por la pastilla sonriente señor!! Seguro que me ayudara con la tos! 
      */
     public void setStateEmoji(EmojiState emoji)
     {
@@ -101,7 +103,7 @@ public class InfoUI : MonoBehaviour
                 StartCoroutine(emojiTimeInSprite(emoji));
                 break;
             default:
-                this.emoji.sprite = SpriteUIManager.Instance.EmojiEstate[(int)emoji];
+                this.emoji.sprite = SpriteUIManager.EmojiEstate[(int)emoji];
                 timePass = -1;
                 break;
         }
@@ -113,9 +115,9 @@ public class InfoUI : MonoBehaviour
     private IEnumerator emojiTimeInSprite(EmojiState emoji)
     {
 
-        this.emoji.sprite = SpriteUIManager.Instance.EmojiEstate[(int)emoji];
+        this.emoji.sprite = SpriteUIManager.EmojiEstate[(int)emoji];
         yield return new WaitForSeconds(timeEmoji);
-        this.emoji.sprite = SpriteUIManager.Instance.EmojiEstate[(int)EmojiState.defect];
+        this.emoji.sprite = SpriteUIManager.EmojiEstate[(int)EmojiState.defect];
     }
 }
 public enum EmojiState

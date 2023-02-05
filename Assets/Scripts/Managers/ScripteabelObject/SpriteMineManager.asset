@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ae49208ae5aad484fb03ec12b559597f, type: 3}
-  m_Name: MineManager
+  m_Name: SpriteMineManager
   m_EditorClassIdentifier: 
   numbers:
   - {fileID: 762410910, guid: f16866a55fbec04468d96f7d2e3af0f4, type: 3}
