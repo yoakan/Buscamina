@@ -11,15 +11,21 @@ public class MinesManagers : MonoBehaviour
     public GameObject tablero,layaoutPrefabs,minasPrefabs;
 
     public int canMinasEnX=9,canMinasEnY=9;
+    private Tablet tablet;
     private  int numMinas =10;
     private Mine[,] casillas;
     private List<Mine> mines= new List<Mine>();
 
+    public Mine[,] Casillas {  set => casillas = value; }
 
+    private void Awake()
+    {
+        tablet = TabletDefautls.Begginer();
+        numMinas = tablet.NumMines;
+    }
     void Start()
     {
-        GameManager.Instance.MinesManagers = this;
-        numMinas = GameManager.Instance.CantMines;
+        
         generateTablet();
         
     }
@@ -74,8 +80,8 @@ public class MinesManagers : MonoBehaviour
         int posY;
         for(int e = 0; e < numMinas; e++)
         {
-            posX = random.Next(0,canMinasEnX);
-            posY = random.Next(0, canMinasEnY);
+            posX = random.Next(0,tablet.SquareX);
+            posY = random.Next(0, tablet.SquareX);
 
             if (casillas[posX, posY].TypeMine==TypeMine.none && clickX != posX && posY != clickY)
             {
@@ -91,8 +97,8 @@ public class MinesManagers : MonoBehaviour
 
     public  void generateTablet()
     {
-        casillas = new Mine[canMinasEnX, canMinasEnY];
-        tablero.GetComponent<GridLayoutGroup>().constraintCount = canMinasEnX;
+        casillas = new Mine[tablet.SquareX, tablet.SquareX];
+        tablero.GetComponent<GridLayoutGroup>().constraintCount = tablet.SquareX;
 
         for (int x = 0; x < casillas.GetLength(0); x++)
         {
@@ -109,11 +115,7 @@ public class MinesManagers : MonoBehaviour
         }
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+
     public void clickMines(int xCasilla, int yCasilla)
     {
         
@@ -201,5 +203,14 @@ public class MinesManagers : MonoBehaviour
         }
         
         return true;
+    }
+    public int getMines()
+    {
+        return tablet.NumMines;
+    }
+
+    public void changeTablet()
+    {
+
     }
 }

@@ -7,10 +7,11 @@ public class GameManager : MonoBehaviour
     private static GameManager instance = null;
 
     private MinesManagers minesManagers;
+    private TabletManager tabletManager;
     private InfoUI infoUI;
     private bool gameOver = false;
 
-    [SerializeField]
+
     private int cantMines;
     private int minesChecked =0;
     private int flagPush = 0;
@@ -28,16 +29,19 @@ public class GameManager : MonoBehaviour
     }
     private void Start()
     {
-        infoUI.setInfoMines(CantMines);
+        cantMines = minesManagers.getMines();
+        infoUI.setInfoMines(cantMines);
     }
     public MinesManagers MinesManagers { get => minesManagers; set => minesManagers = value; }
     public InfoUI InfoUI { get => infoUI; set => infoUI = value; }
-    public int CantMines { get => cantMines; set => cantMines = value; }
+
     public bool GameOver { get => gameOver;  }
 
     private void Awake()
     {
         infoUI = FindObjectOfType<InfoUI>();
+        minesManagers = FindObjectOfType<MinesManagers>();
+        tabletManager = FindObjectOfType<TabletManager>();
 
         if (instance != null && instance != this)
         {
@@ -99,6 +103,7 @@ public class GameManager : MonoBehaviour
             InfoUI.setStateEmoji(EmojiState.surprise);
         }
     }
+    
     public void resetGame()
     {
         firstClick = false;
