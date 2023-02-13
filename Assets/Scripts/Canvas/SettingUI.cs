@@ -1,14 +1,15 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class SettingUI : MonoBehaviour
 {
     [SerializeField]
     private GameObject gameSettings;
     private bool mouseInSetting = false;
-    private int resolutionXDefault = 205, resolutionYDefault = 300;
-    private int constantPixelPerSquare = 10;
+    private int resolutionXDefault = 210, resolutionYDefault = 295;
+    private int constantPixelPerSquare = 21;
 
     private void Awake()
     {
@@ -30,6 +31,7 @@ public class SettingUI : MonoBehaviour
         escaleResolution(tablet);
         GameManager.Instance.TabletManager.changeTablet(tablet);
         GameManager.Instance.resetGame();
+
         gameSettings.SetActive(false);
 
     }
@@ -37,6 +39,7 @@ public class SettingUI : MonoBehaviour
     {
         int valueAddX = (tablet.SquareX - TabletDefautls.MINVALUE) * constantPixelPerSquare;
         int valueAddY = (tablet.SquareY - TabletDefautls.MINVALUE) * constantPixelPerSquare;
+        print("WIGHT: "+ (resolutionXDefault + valueAddX)+" HEIGHT: "+(resolutionYDefault + valueAddY));
         Screen.SetResolution(resolutionXDefault+valueAddX, resolutionYDefault+valueAddY, false);
     }
     public void showGameSetting()
@@ -47,5 +50,9 @@ public class SettingUI : MonoBehaviour
     public void mouseStaySetting(bool setting)
     {
         mouseInSetting = setting;
+    }
+    public void customiceDificult()
+    {
+        SceneManager.LoadScene("SceneName", LoadSceneMode.Additive);
     }
 }

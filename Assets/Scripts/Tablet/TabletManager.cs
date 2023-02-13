@@ -28,7 +28,7 @@ public class TabletManager : MonoBehaviour
      */
     public Mine[,] generateTablet()
     {
-        casillas = new Mine[tablet.SquareX, tablet.SquareX];
+        casillas = new Mine[tablet.SquareX, tablet.SquareY];
         tablero.GetComponent<GridLayoutGroup>().constraintCount = tablet.SquareX;
 
         for (int x = 0; x < casillas.GetLength(0); x++)
@@ -81,5 +81,6 @@ public class TabletManager : MonoBehaviour
     {
         this.tablet = tablet;
         restartTablet();
+        GameManager.Instance.InfoUI.setInfoMines(tablet.NumMines);
     }
 }

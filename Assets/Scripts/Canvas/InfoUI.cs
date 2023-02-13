@@ -119,6 +119,7 @@ public class InfoUI : MonoBehaviour
         yield return new WaitForSeconds(timeEmoji);
         this.emoji.sprite = SpriteUIManager.EmojiEstate[(int)EmojiState.defect];
     }
+
 }
 public enum EmojiState
 {

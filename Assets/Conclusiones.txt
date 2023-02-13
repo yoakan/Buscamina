@@ -1,0 +1,2 @@
+Ha sido un reto divertido en el que he aprendido mucho sobre los scripteableObject por las dificultades que dio este junto a un singleton.
+Además de siempre ponerme a prueba para aprobechar este tipo de algoritmo pero orientado a objeto.

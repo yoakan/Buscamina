@@ -126,5 +126,6 @@ public class GameManager : MonoBehaviour
     {
         firstClick = false;
         gameOver = false;
+        infoUI.resetTime();
     }
 }
