@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class TabletDefautls 
 {
-    public  static int MINVALUE = 9;
+
     public static Tablet Begginer()
     {
         return new Tablet(9, 9, 10);
